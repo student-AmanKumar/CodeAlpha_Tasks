@@ -3534,6 +3534,90 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
+<style>
+/* =========================================================
+   BKX — SCROLLBAR + MOBILE TAP EFFECT
+   ========================================================= */
 
+/* ---------- Hide Scrollbar: All Devices ---------- */
+html,
+body,
+#bkxGallery {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#bkxGallery::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+}
+
+
+/* ---------- Remove Mobile Tap Highlight ---------- */
+#bkxGallery *,
+#bkxGallery img,
+#bkxGallery a,
+#bkxGallery button,
+#bkxGallery [role="link"] {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+}
+
+
+/* ---------- Remove Focus / Active Outline ---------- */
+#bkxGallery img:focus,
+#bkxGallery a:focus,
+#bkxGallery button:focus,
+#bkxGallery [role="link"]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#bkxGallery button:active,
+#bkxGallery a:active,
+#bkxGallery img:active,
+#bkxGallery [role="link"]:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+
+/* ---------- Images ---------- */
+#bkxGallery img {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -webkit-user-drag: none !important;
+}
+
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+
+    html,
+    body,
+    #bkxGallery {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar,
+    #bkxGallery::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    #bkxGallery *,
+    #bkxGallery img,
+    #bkxGallery a,
+    #bkxGallery button {
+        -webkit-tap-highlight-color: transparent !important;
+    }
+}
+</style>
  </body>
  </html>

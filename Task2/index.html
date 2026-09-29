@@ -2373,6 +2373,25 @@ body::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
+/* Mobile tap highlight only */
+a,
+button,
+[role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+@media (max-width: 768px) {
+    html,
+    body {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
 </style>
 </head>
 

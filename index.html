@@ -1176,7 +1176,28 @@ button{
 
 }
 
-</style>
+@media (max-width: 600px){
+
+    html,
+    body {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+        display: none !important;
+    }
+
+    a,
+    button {
+        -webkit-tap-highlight-color: transparent;
+        tap-highlight-color: transparent;
+    }
+
+}</style>
 
 </head>
 

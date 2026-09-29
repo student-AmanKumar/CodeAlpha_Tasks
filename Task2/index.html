@@ -2392,7 +2392,31 @@ button,
         display: none;
     }
 }
-</style>
+/* Hide scrollbar on mobile only */
+@media (max-width: 768px) {
+
+    html {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    html::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+        display: none !important;
+    }
+
+    body {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+        display: none !important;
+    }
+}</style>
 </head>
 
 
